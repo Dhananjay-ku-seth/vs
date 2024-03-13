@@ -8,7 +8,7 @@ public class GuessTheNumber {
         
         int lowerBound = 1;
         int upperBound = 100;
-        int maxAttempts = 10; // Limiting the attempts
+        int maxAttempts = 7; // Decreased number of attempts
         
         boolean playAgain = true;
         int totalAttempts = 0;

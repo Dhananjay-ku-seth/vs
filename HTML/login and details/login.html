@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        #loginContainer {
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <div id="loginContainer">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username"><br>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password"><br><br>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent default form submission
+
+            // Get username and password values
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            // Check if username and password are correct (replace with your own validation logic)
+            if (username === "sagar" && password === "1532004") {
+                // Redirect to another page
+                window.location.href = "details.html";
+            } else {
+                alert("Invalid username or password. Please try again.");
+            }
+        });
+    </script>
+</body>
+</html>
